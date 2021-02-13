@@ -7,6 +7,7 @@ module.exports = merge(common, {
     devtool: 'inline-source-map', // better for style source-maps, before used eval-cheap-module-source-map
     devServer: {
         contentBase: path.join(__dirname, 'public'),
-        historyApiFallback: true
+        historyApiFallback: true,
+        publicPath: '/dist/'
     }
 });
