@@ -1,2 +1,6 @@
 node_modules/
 .idea/
+
+# Ignore auto generated files by the build process
+public/bundle.js*
+public/styles.css*
