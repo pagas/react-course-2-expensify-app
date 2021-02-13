@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should show ExpenseSummary with count and total equal to 0 1`] = `
+<div>
+  <h3>
+    Viewing 
+    0
+     
+    expenses
+     totalling 
+    $0.00
+  </h3>
+</div>
+`;
+
+exports[`Should show correct ExpenseSummary with multiple count and totals 1`] = `
+<div>
+  <h3>
+    Viewing 
+    22
+     
+    expenses
+     totalling 
+    $234.32
+  </h3>
+</div>
+`;
+
+exports[`Should show empty ExpenseSummary with count equal to 1 1`] = `
+<div>
+  <h3>
+    Viewing 
+    1
+     
+    expense
+     totalling 
+    $2.33
+  </h3>
+</div>
+`;
