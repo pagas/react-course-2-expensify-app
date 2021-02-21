@@ -169,7 +169,7 @@ test('Should setup set expense action object with data', () => {
 })
 
 
-test('Should fetch the expenses from database', () => {
+test('Should fetch the expenses from database', (done) => {
     const store = createMockStore({});
 
     store.dispatch(startSetExpenses())
