@@ -13,6 +13,7 @@ import AppRouter, {history} from "./routers/AppRouter";
 import configureStore from './store/confitureStore';
 
 import {login, logout} from "./actions/auth";
+import LoadingPage from "./components/LoadingPage";
 
 const store = configureStore();
 
@@ -22,7 +23,7 @@ const jsx = (
     </Provider>
 )
 
-ReactDOM.render(<p>Loading...</p>, document.getElementById('app'))
+ReactDOM.render(<LoadingPage></LoadingPage>, document.getElementById('app'))
 
 import {firebase} from './firebase/firebase';
 
