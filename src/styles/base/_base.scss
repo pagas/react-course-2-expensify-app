@@ -1,6 +1,10 @@
 // partials start with underscore
 // rem - better support for execiblity
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
 }
