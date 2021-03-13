@@ -25,10 +25,24 @@ module.exports = {
                 loader: 'babel-loader',
                 test: /\.js$/,
                 exclude: /node_modules/
-            }, {
+            },
+            {
+                test: /\.(png|jpg|gif)$/i,
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            limit: false,
+                        },
+                    },
+                ],
+            },
+            {
                 test: /\.s?css$/i,
                 use: [
-                    MiniCssExtractPlugin.loader,
+                    {
+                        loader: MiniCssExtractPlugin.loader
+                    },
                     'css-loader',
                     'sass-loader'
                 ]
